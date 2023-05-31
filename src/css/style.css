@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Poppins:ital,wght@0,300;1,300&family=Tillana&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tillana', cursive;
+}
+.all{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.backgroundvideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.header {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+}
+.header button {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid white;
+    outline: gray;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: .5s;
+}
+.logo {
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    left: 20px;
+    color: white;
+    font-family: 'Poppins', cursive;
+}
+.characters {
+    position: absolute;
+    display: flex;
+    top: 60px;
+    left: 15%;
+    right: 15%;
+    height: 1200px;
+    border: 4px solid orangered;
+    background-color: black;
+    border-radius: 10px;
+    z-index: 99;
+}
+.characters h2 {
+    position: absolute;
+    font-size: 3.1em;
+    top: 10px;
+    left: 30%;
+    font-family: 'Poppins', sans-serif;
+}
+.anubis {
+    position: absolute;
+    top: 150px;
+    right: 30px;
+    width: 150px;
+    height: 200px;
+}
+.dsc .texta{
+    position: relative;
+    background-color: darkgoldenrod;
+    border: 1px solid white;
+    overflow: hidden;
+    border-radius: 6px;
+    text-align: center;
+    top: 150px;
+    left: 20px;
+    width: 300px;
+    height: 200px;    
+}
+.dsc .textb{
+    position: relative;
+    background-color: purple;
+    border: 1px solid white;
+    overflow: hidden;
+    border-radius: 6px;
+    text-align: center;
+    top: 200px;
+    left: 20px;
+    width: 300px;
+    height: 200px;    
+}
+.dsc .textc{
+    position: relative;
+    background-color: blue;
+    border: 1px solid white;
+    overflow: hidden;
+    border-radius: 6px;
+    text-align: center;
+    top: 250px;
+    left: 20px;
+    width: 300px;
+    height: 200px;    
+}
+.dsc .textd{
+    position: relative;
+    background-color: maroon;
+    border: 1px solid white;
+    overflow: hidden;
+    border-radius: 6px;
+    text-align: center;
+    top: 300px;
+    left: 20px;
+    width: 300px;
+    height: 200px;    
+}
+.fichaanubis {
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid white;
+    background-color: black;
+    top: 165px;
+    left: 350px;
+    border-radius: 6px;
+    width: 350px;
+}
+.fichaanubis h4 {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    background-color: red;
+    border: 2px solid gray;
+    border-radius: 6px;
+    left: 20%;
+    text-align: center;
+    width: 200px;
+}
+.dymos {
+    position: absolute;
+    top: 400px;
+    right: 20px;
+    width: 150px;
+    height: 200px;
+}
+.dymos img{
+    width: 120px;
+    height: 190px;
+}
+.fichadymos{
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid white;
+    background-color: black;
+    top: 415px;
+    left: 350px;
+    border-radius: 6px;
+    width: 350px;
+}
+.fichadymos h4 {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    background-color: red;
+    border: 2px solid gray;
+    border-radius: 6px;
+    left: 20%;
+    text-align: center;
+    width: 200px;
+}
+.reijasper {
+    position: absolute;
+    top: 650px;
+    right: 55px;
+    width: 150px;
+    height: 200px;
+}
+.fichajasper{
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid white;
+    background-color: black;
+    top: 665px;
+    left: 350px;
+    border-radius: 6px;
+    width: 350px;
+}
+.fichajasper h4 {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    background-color: red;
+    border: 2px solid gray;
+    border-radius: 6px;
+    left: 20%;
+    text-align: center;
+    width: 200px;
+}
+.barnet {
+    position: absolute;
+    bottom: 100px;
+    right: 35px;
+    width: 150px;
+    height: 200px;
+}
+.barnet img{
+    width: 175px;
+    height: 200px;
+}
+.fichabarnet{
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid white;
+    background-color: black;
+    bottom: 105px;
+    left: 350px;
+    border-radius: 6px;
+    width: 350px;
+}
+.fichabarnet h4 {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    background-color: red;
+    border: 2px solid gray;
+    border-radius: 6px;
+    left: 20%;
+    text-align: center;
+    width: 200px;
+}
