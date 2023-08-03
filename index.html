@@ -1,102 +1,286 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <title>Aedon Web</title>
-        <link rel="shortcut icon" type="image/png" href="src/images/anubis.gif" />
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/src/css/style.css">
-    </head>
-    <body class="all">
-        <video class="backgroundvideo" autoplay muted loop>
-            <source src="src/videos/the_background_-_22126 (Original).mp4">
-        </video>
-        <header class="header">
-            <h1 class="logo">Aedon Web</h1>
-            <nav class="hnav">
+<!--
+Duplicar Linha = Shift + Alt + Seta
+Mover Linha = Alt + Seta
+Apagar Linha = Ctrl + Shift + K
+Multi Ocorrências = Ctrl + D
+Multi Seleção = Alt + Click
+Zen Mode = Ctrl + K Z
+IntelliSense = Ctrl + Espaço-->
 
-            </nav>
-        </header>
-        <div>
-            <div class="characters">
-                <h2>Personagens</h2>
-                <div class="dsc">
-                    <div class="anubis">
-                        <img src="src/images/anubis-ragnarok-anubis.gif">
-                    </div>
-                    <div class="texta">
-                        Anúbis, o Deus da Morte e do Caos. Quieto, conversa de maneira suave e na maioria das vezes, apenas quando alguém fala com ele. É amigável com aqueles
-                        que não possui nada em particular. Tem medo de seu maior segredo ser revelado. Sonha em ter sua fortuna: um mundo em paz.
-                    </div>
-                    <div class="fichaanubis">
-                        <div class="especiea">
-                            Raça: Humanóide <br>
-                            Sub-raça: Chacal <br>
-                            Tipo: Inimigo, Boss (Divindade)
-                        </div>
-                        <div class="statusa">
-                            <h4>HP total: 35.000</h4>
-                            Estado atual: Foragido de seu selamento. Parece estar planejando algo...
-                        </div>
-                    </div>
-                    <div class="dymos">
-                        <img src="src/images/dragons-crown-fantasy.gif">
-                    </div>
-                    <div class="textb">
-                        Dymos, o primeiro Necromage. Bravo, grita e desgosta dos jogadores. Sempre fala a verdade e assume seus erros, um homem honesto. Tem medo
-                        de falhar no geral, seja em combate ou com aqueles que gosta. Seu maior sonho é se tornar o ser mais forte do Universo.
-                    </div>
-                    <div class="fichadymos">
-                        <div class="especieb">
-                            Raça: Evolucer <br>
-                            Sub-raça: Fosworn <br>
-                            Tipo: Inimigo, Boss (Nequício)
-                        </div>
-                        <div class="statusb">
-                            <h4>HP total: 21.500</h4>
-                            Estado atual: Sua sede é insaciável: "... Eu preciso de mais, MAIS!"
-                        </div>
-                    </div>
-                    <div class="reijasper">
-                        <img src="src/images/artorias-dark-souls (1).gif">
-                    </div>
-                    <div class="textc">
-                        Jasper, o atual Rei. Bravo, grita e perde a paciência rapidamente, mas costuma ser bom humorado e fazer piadas o tempo todo. Tem medo
-                        de seu segredo mais obscuro ser revelado. Seu trabalho é comunicar-se e passar mensagens de Osiris, o Deus imperador.
-                    </div>
-                    <div class="fichajasper">
-                        <div class="especiec">
-                            Raça: Humano <br>
-                            Sub-raça: Nord <br>
-                            Tipo: Aliado, NPC (Nequício)
-                        </div>
-                        <div class="statusc">
-                            <h4>HP total: 23.000</h4>
-                            Estado atual: Osiris está furioso! Precisamos selar aquela coisa!
-                        </div>
-                    </div>
-                    <div class="barnet">
-                        <img src="src/images/tzeentch-chosen-warhammer-fantasy.gif">
-                    </div>
-                    <div class="textd">
-                        Barnet, o ferreiro e guerreiro do reino. Desconfiado, não confia em quase ninguém, mas caso tenha a confiança conquistada, será um ótimo ajudante aos
-                        jogadores. Tem medo de perder os que ama. Sonha em viajar o mundo com sua família, principalmente com sua filha.    
-                    </div>
-                    <div class="fichabarnet">
-                        <div class="especied">
-                            Raça: Humano <br>
-                            Sub-raça: Breton <br>
-                            Tipo: Aliado, NPC (Nequício)
-                        </div>
-                        <div class="statusd">
-                            <h4>HP total: 23.000</h4>
-                            Estado atual: "Ei, filha! Vem dar 'oi' para os nossos heróis!"
-                        </div>
-                    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="images/letter-h.png">
+    <title>Henri's Web Assistant</title>
+    <link href="https://fonts.cdnfonts.com/css/warm-stories" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/little-penguin" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200&family=Lugrasimo&family=Montserrat:wght@500&family=Poppins:wght@500&display=swap"
+        rel="stylesheet">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+    <!-- header design -->
+    <header class="header">
+        <a href="index.html" class="logo">HWeb</a>
+        <nav class="navbar">
+            <a href="#home" class="active">Início</a>
+            <a href="#about">Sobre</a>
+            <a href="#services">Serviços</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contato</a>
+        </nav>
+        <div class="bx bx-moon" id="darkMode-icon"></div>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Oi, eu sou</h3>
+            <h1>Henri</h1>
+            <p>À sua disposição como Desenvolvedor, Monitor e Designer Web.</p>
+            <div class="social-media">
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=100011572300185"><i
+                        class='bx bxl-facebook'></i></a>
+                <a target="_blank" href="https://twitter.com/henritdb"><i class='bx bxl-twitter'></i></a>
+                <a target="_blank" href="https://www.instagram.com/henri_eb/"><i class='bx bxl-instagram-alt'></i></a>
+                <a target="_blank" href="https://discord.gg/rafBBfaaJK"><i class='bx bxl-discord-alt'></i></a>
+            </div>
+            <a href="#portfolio" class="btn">> Meus projetos</a>
+        </div>
+        <div class="profession-container">
+            <div class="profession-box">
+                <div class="profession" style="--i:0;">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Web Developer</h3>
                 </div>
-                
+                <div class="profession" style="--i:1;">
+                    <i class='bx bx-palette'></i>
+                    <h3>Web Designer</h3>
+                </div>
+                <div class="profession" style="--i:2;">
+                    <i class='bx bxs-edit-alt'></i>
+                    <h3>Photo Editor</h3>
+                </div>
+                <div class="profession" style="--i:3;">
+                    <i class='bx bx-dice-3'></i>
+                    <h3>Web Helper</h3>
+                </div>
+                <div class="circle">
+                </div>
+            </div>
+            <div class="overlay">
+            </div>
+            <div class="home-img">
+                <img src="src/images/pngwing.com (19).png">
             </div>
         </div>
-    </body>
+
+    </section>
+    <!-- about section design -->
+    <section class="about" id="about">
+
+        <div class="about-img">
+            <img src="src/images/Design sem nome (1).png" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">Sobre <span>Mim</span></h2>
+            <h3>Oi, estou aqui para ajudá-lo em seu próximo projeto!</h3>
+            <p>Meu nome é Pedro Henrique Simoncini, também conhecido como Henrique. Sou aluno do Instituto Federal do
+                Rio de Janeiro (IFRJ) e estou atualmente no 3º ano do Ensino Médio, com 16 anos de idade. Desde a
+                infância, tenho grande interesse e dedicação aos assuntos relacionados à informática em geral.
+
+                Se você está procurando ajuda para criar seu site ou aplicativo, saiba que estou disponível para
+                oferecer minha assistência com muito entusiasmo. Realizo aulas de monitoria todas as terças, quartas e
+                sextas-feiras, das 9h às 12h, abrangendo diversos temas dentro da minha área de conhecimento.
+
+                Caso precise de suporte adicional além das monitorias, fique à vontade para explorar os serviços que
+                ofereço. Estou pronto para contribuir com o seu projeto de forma eficiente e eficaz.</p>
+            <a href="about.html" class="btn">Ler mais</a>
+        </div>
+    </section>
+    <!-- services section design -->
+    <section class="services" id="services">
+        <h2 class="heading">Meus <span>Serviços</span></h2>
+        <div class="services-container">
+            <div class="services-box">
+                <i class=' bx bx-code-alt'></i>
+                <h3>Desenvolvimento Web e Programação</h3>
+                <p>O objetivo deste pacote é oferecer um projeto abrangente, que engloba desde o desenvolvimento de um
+                    website com todas as páginas conectadas a um banco de dados, até a criação de um algoritmo
+                    executável no prompt de comando (ou terminal), utilizando uma linguagem de programação back-end.<br>
+                <div class="linguagem">Linguagens: HTML, CSS, Javascript, PHP, Java e Python.</div>
+                </p>
+                <a href="services.html" class="btn">Ler mais</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-palette'></i>
+                <h3>Web Design / Design gráfico</h3>
+                <p>O objetivo deste pacote é criar o design principal de um projeto, seja ele um website completo ou
+                    apenas uma página web específica, com base nas suas ideias. Antes de solicitar este pacote, é
+                    importante ter uma ideia de design clara em mente. Para se inspirar, recomendo salvar ou baixar
+                    imagens no aplicativo Pinterest.<br>
+                <div class="linguagem">Linguagens: HTML, CSS e Javascript.</div>
+                </p>
+                <a href="services.html" class="btn">Ler mais</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-dice-3'></i>
+                <h3>Desenvolvimento de RPG e Personagens</h3>
+                <p>Este pacote tem como foco auxiliá-lo no desenvolvimento de um RPG de mesa ou no
+                    desenvolvimento de um personagem. O pacote de RPG inclui a criação de locais, história,
+                    personagens e até um Website. Já o de personagem abrange a
+                    criação da história, habilidades e design exclusivos.<br>
+                <div class="linguagem">Linguagens: HTML, CSS, Javascript e PHP.</div>
+                </p>
+
+                <a href="services.html" class="btn">Ler mais</a>
+            </div>
+        </div>
+    </section>
+    <!-- portfolio section design -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Últimos <span>Projetos</span></h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="src/images/pexels-jessica-lewis-creative-606545.jpg">
+                <div class="portfolio-layer">
+                    <h4>Web Caffe</h4>
+                    <p>Um Website dedicado a uma loja de café. Feito com o sonho de
+                        criar uma cafeteria acolhedora para entusiastas da leitura, jogadores e programadores.</p>
+                    <a href="comingsoon.html"><i class=' bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="src/images/pexels-walid-ahmad-847402.jpg">
+                <div class="portfolio-layer">
+                    <h4>Aedon Web RPG</h4>
+                    <p>Futuro website destinado a criar um player online para RPG de mesa, com recursos de
+                        personalização e servidores.
+                    </p>
+                    <a href="comingsoon.html"><i class=' bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="src/images/pexels-pixabay-274506.jpg">
+                <div class="portfolio-layer">
+                    <h4>Soccer Store</h4>
+                    <p>Uma pequena loja virtual para marketing de recursos relacionados a futebol.</p>
+                    <a href="comingsoon.html"><i class=' bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="src/images/pexels-anton-243698.jpg">
+                <div class="portfolio-layer">
+                    <h4>Pokébattle Simulator</h4>
+                    <p>Pequeno jogo interativo feito em linguagem Java, com ASCII Art, executável no CMD.</p>
+                    <a href="comingsoon.html"><i class=' bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="src/images/pexels-lisa-fotios-192273.jpg">
+                <div class="portfolio-layer">
+                    <h4>Websites Responsivos</h4>
+                    <p>Demonstrações de sites funcionais em diferentes plataformas digitais.</p>
+                    <a href="comingsoon.html"><i class=' bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="src/images/pexels-nataliya-vaitkevich-8939264.jpg">
+                <div class="portfolio-layer">
+                    <h4>Vet Web</h4>
+                    <p>Um Website para atendimento virtual de animais, desenvolvido para clínicas veterinárias.</p>
+                    <a href="comingsoon.html"><i class=' bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- testimonial design -->
+    <h2 class="heading">Feedbacks <span>Valiosos</span></h2>
+    <div class="testimonial-container">
+        <div class="testimonial-wrapper">
+            <div class="testimonial-box mySwiper">
+                <div class="testimonial-content swiper-wrapper">
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="src/images/user (1).png" alt="">
+                        <h3>Deixe seu feedback</h3>
+                        <p>Avalie-me via Whatsapp, Instagram, Twitter, Facebook ou mande uma mensagem em <a
+                                href="#contact">Fale Comigo</a>.</p>
+                    </div>
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="src/images/user (1).png" alt="">
+                        <h3>Deixe seu feedback</h3>
+                        <p>Avalie-me via Whatsapp, Instagram, Twitter, Facebook ou mande uma mensagem em <a
+                                href="#contact">Fale Comigo</a>.</p>
+                    </div>
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="src/images/user (1).png" alt="">
+                        <h3>Deixe seu feedback</h3>
+                        <p>Avalie-me via Whatsapp, Instagram, Twitter, Facebook ou mande uma mensagem em <a
+                                href="#contact">Fale Comigo</a>.</p>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+
+            </div>
+        </div>
+    </div>
+    <!-- contact section design -->
+    <div class="bg-contact">
+        <section class="contact" id="contact">
+            <h2 class="heading">Fale <span>Comigo!</span></h2>
+            <form onsubmit="sendEmail(); reset(); return false">
+                <div class="input-box">
+                    <input id="user" autocomplete="off" type="text" placeholder="Primeiro nome / Apelido" required>
+                    <input id="email" autocomplete="off" type="email" placeholder="Endereço de E-mail" required>
+                </div>
+                <div class="input-box">
+                    <input id="number" autocomplete="off" type="tel" placeholder="(DDD) Número celular" required>
+                    <input id="subject" autocomplete="off" type="text" placeholder="Assunto" required>
+                </div>
+                <textarea maxlength="600" autocomplete="off" id="message" cols="30" rows="10" placeholder="Sua mensagem"
+                    required></textarea>
+                <input type="submit" value="Enviar mensagem" class="btn">
+            </form>
+        </section>
+    </div>
+
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 por Pedro Henrique Simoncini | Todos os direitos reservados.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- custom js -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="src/js/script.js"></script>
+</body>
+
 </html>

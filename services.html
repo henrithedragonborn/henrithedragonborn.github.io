@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--
+Duplicar Linha = Shift + Alt + Seta
+Mover Linha = Alt + Seta
+Apagar Linha = Ctrl + Shift + K
+Multi Ocorrências = Ctrl + D
+Multi Seleção = Alt + Click
+Zen Mode = Ctrl + K Z
+IntelliSense = Ctrl + Espaço-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="images/letter-h.png">
+    <title>Henri's Web Assistant</title>
+    <link href="https://fonts.cdnfonts.com/css/warm-stories" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/little-penguin" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200&family=Lugrasimo&family=Montserrat:wght@500&family=Poppins:wght@500&display=swap"
+        rel="stylesheet">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body class="services-body">
+    <header class="header">
+        <a href="index.html" class="back-btn">Voltar</a>
+        <nav class="navbar">
+            <a href="#home" class="active">Início</a>
+            <a href="#services">Serviços</a>
+            <a href="#about">Dicas</a>
+            <a href="#contact">Pedir</a>
+        </nav>
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+    <div class="sections">
+        <section class="welcome" id="home">
+            <img src="src/images/pexels-min-an-1006094.jpg">
+            <div class="welcome-content">
+                <h1>Desenvolvedor & Designer</h1>
+                <h2>Front-end, Back-end, Photoshop</h2>
+            </div>
+        </section>
+
+        <section class="presentation" id="services">
+            <h1>Pacotes e Preços</h1>
+            <h2>Os preços abaixo são os valores estimados/médios dos pacotes. Podem variar de acordo com o proposto.
+            </h2>
+            <div class="presentation-content">
+                <div class="card">
+                    <div class="content">
+                        <div class="title">Pacote Dev</div>
+                        <div class="price">R$79.90</div>
+                        <div class="description">Indicado para projetos completos, de maior complexidade e já
+                            planejados, que incluam
+                            linguagens Front-end e/ou Back-end.
+                        </div>
+                    </div>
+                    <button id="buybutton" onclick="redirecionarPagina('#contact')">
+                        Pedir agora
+                    </button>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="title">Pacote Designer</div>
+                        <div class="price">R$39.90</div>
+                        <div class="description">Indicado para organizar e produzir o design principal de um site ou de
+                            apenas uma WebPage, incluindo linguagens Front-end e/ou edição de imagem e vídeo.</div>
+                    </div>
+                    <button id="buybutton" onclick="redirecionarPagina('#contact')">
+                        Pedir agora
+                    </button>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="title">Pacote Editor</div>
+                        <div class="price">R$69.90</div>
+                        <div class="description">Indicado para aqueles que querem produzir suas próprias artes digitais,
+                            para implementá-las em um projeto (backgrounds, png's, logos), produzidas em Photoshop.
+                        </div>
+                    </div>
+                    <button id="buybutton" onclick="redirecionarPagina('#contact')">
+                        Pedir agora
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="tips" id="about">
+            <h1>Indicações</h1>
+            <h2>Como organizo minhas ideias? Qual pacote devo pedir?</h2>
+            <div class="tips-content">
+                <div class="cardbg">
+                    <div class="bolinha-position">
+                        <div class="bolinha"></div>
+                    </div>
+                    <div class="card1">
+                        <h1>1. Organização do projeto</h1>
+                        <p>O planejamento é o primeiro passo essencial para criar um projeto de sucesso. Para garantir
+                            uma
+                            abordagem eficaz, leve em consideração as seguintes perguntas-chave:<br>
+                            <br>
+                            <font color="skyblue"><i>Qual é o público-alvo do meu projeto?</i></font>
+                            <br>
+                            <br>
+                            <font color="skyblue"><i>O que desejo comunicar e divulgar através do meu projeto?</i></font>
+                            <br>
+                            <br>
+                            <font color="skyblue"><i>Qual é o tema principal do projeto?</i></font>
+                            <br>
+                            <br>
+                            <font color="skyblue"><i>Quantas páginas ou telas o projeto necessita?</i></font><br>
+                           <br>
+                            Uma ótima ferramenta para encontrar inspiração é o aplicativo <font color="red">Pinterest
+                            </font>
+                            . Nele, você pode
+                            pesquisar por 'Webpages' e explorar uma variedade de modelos de sites. Salve os que mais lhe
+                            agradarem e, em seguida, utilize-os como referência para criar seu próprio layout
+                            personalizado.
+                        </p>
+                    </div>
+                </div>
+                <div class="cardbg">
+                    <div class="bolinha-position">
+                        <div class="bolinha"></div>
+                    </div>
+                    <div class="card1">
+                        <h1>2. Ferramentas para seu projeto</h1>
+                        <p>Como citado anteriormente, o app Pinterest é uma ótima forma para encontrar modelos predefinidos 
+                        para seu Website ou aplicativo. Aqui vai mais algumas dicas para outros apps e ferramentas para
+                        criar um layout:<br><br>
+                        <font color="dodgerblue">Canva</font>:<br> O Canva é uma ferramenta online que oferece uma ampla
+                        variedade de modelos predefinidos
+                        para criar designs visuais, incluindo layouts para websites e aplicativos. É uma excelente opção
+                        para quem busca uma abordagem mais visual e intuitiva na criação de layouts.
+                        <br>
+                        <br>
+                        <font color="skyblue">Figma</font>:<br> Como mencionado anteriormente, o Figma é uma plataforma
+                        de design colaborativo baseada na
+                        nuvem. Além de permitir que várias pessoas trabalhem em projetos simultaneamente, ele é
+                        amplamente utilizado para design de interfaces e prototipagem interativa.
+                        <br>
+                        <br>
+                        <font color="indianred">UIverse</font>:<br> Essa ferramenta é indicada para escolher e explorar
+                        designs de elementos específicos do
+                        projeto, como botões, cards, formulários e outros componentes de interface. Isso pode economizar
+                        tempo na criação de elementos padronizados e garantir uma aparência coesa em todo o projeto.
+                        <br>
+                        <br>
+                        <font color="red">CDN Fonts</font>:<br> Essa ferramenta é utilizada para escolher fontes de
+                        texto para o seu projeto. As
+                        fontes desempenham um papel crucial no design, e o uso de fontes adequadas pode melhorar a
+                        legibilidade e a estética geral do layout. É aconselhável escolher 2 ou 3 fontes que
+                        complementem a identidade visual do projeto.
+                        <br>
+                        <br>
+                        <font color="teal">Pexels</font>:<br> O Pexels é um site que oferece uma vasta coleção de
+                        imagens gratuitas de alta qualidade
+                        que podem ser usadas como plano de fundo, em cards ou em outros elementos visuais do projeto. O
+                        uso de imagens adequadas pode enriquecer a experiência do usuário e tornar o layout mais
+                        atraente.
+                        <br>
+                        <br>
+                        Lembrando sempre que o sucesso do seu projeto depende da combinação adequada de ferramentas,
+                        criatividade e compreensão das necessidades do público-alvo. Utilizar essas ferramentas pode
+                        facilitar o processo de criação de layouts, mas é importante adaptar a abordagem de acordo com
+                        as demandas específicas do projeto e do design desejado.
+                    </p>
+                    </div>
+                </div>
+                <div class="cardbg">
+                    <div class="bolinha-position">
+                        <div class="bolinha"></div>
+                    </div>
+                    <div class="card1">
+
+                        <h1 id="cardtitle">3. Qual pacote você deve escolher</h1>
+                        <p>O último passo é determinar qual pacote é o mais adequado para aquisição. <br> <br>
+
+                        <font color="darkgreen">Pacote Dev</font>:<br>Se você já possui um planejamento quase completo
+                        do que deseja em seu projeto e
+                        busca uma implementação abrangente, o pacote Dev é a opção ideal. Com este pacote, todas as
+                        ferramentas necessárias serão utilizadas para colocar seu projeto em prática e desenvolver os
+                        códigos necessários. Além disso, você terá a oportunidade de acompanhar todo o processo de
+                        montagem do seu projeto e, quem sabe, aprender algo novo ao longo do caminho. O pacote Dev
+                        também é recomendado para projetos simples, como a criação de um pequeno jogo executável no CMD,
+                        utilizando uma linguagem de Backend de fácil entendimento.<br> <br>
+
+                        <font color="blue">Pacote Designer</font>: <br>Indicado para aqueles que desejam focar na parte
+                        do layout e design da página
+                        ou aplicativo. Com este pacote, você terá acesso a recursos para criar barras de menu,
+                        backgrounds, animações, cards, formulários e outros elementos essenciais para montar o layout
+                        perfeito. <br> <br>
+
+                        <font color="navy">Pacote Editor</font>: <br>Perfeito para quem deseja produzir seus próprios
+                        backgrounds, logos, PNGs e
+                        outras artes. Acompanhe de perto a produção das suas imagens e oriente o processo para que eu
+                        possa atender às suas expectativas.
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="comprar" id="contact">
+            <h1>Pedir agora</h1>
+            <div class="comprar-content">
+                <form onsubmit="sendEmail(); reset(); return false">
+                    <div class="input-box">
+                        <input id="user" autocomplete="off" type="text" placeholder="Primeiro nome / Apelido" required>
+                        <input id="email" autocomplete="off" type="email" placeholder="Endereço de E-mail" required>
+                    </div>
+                    <div class="input-box">
+                        <input id="number" autocomplete="off" type="tel" placeholder="(DDD) Número celular" required>
+                        <input id="subject" autocomplete="off" type="text"
+                            placeholder="Pacote escolhido + Assunto (Opcional)" required>
+                    </div>
+                    <textarea autocomplete="off" maxlength="3000" id="message" cols="30" rows="10"
+                        placeholder="Detalhes do pedido" required></textarea>
+                    <input type="submit" value="Enviar mensagem" class="btn">
+                </form>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 por Pedro Henrique Simoncini | Todos os direitos reservados.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- custom js -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="src/js/script.js"></script>
+</body>
+
+</html>
