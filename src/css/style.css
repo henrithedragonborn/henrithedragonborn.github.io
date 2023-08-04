@@ -28,7 +28,7 @@ font-family: 'Little Penguin', sans-serif;
 }
 
 .dark-mode {
-    --bg-color: black;
+    --bg-color: #151515;
     --text-color: #F2F1F1;
     --shadow-color: #4D1C73;
     --main-color: #712CA5;
@@ -56,10 +56,11 @@ body {
 .header {
     position: fixed;
     top: 0;
+    max-width: 100%;
     justify-content: space-between;
     left: 0;
     width: 100%;
-    padding: 2rem 7%;
+    padding: 2rem 5%;
     background: transparent;
     display: flex;
     align-items: center;
@@ -148,7 +149,7 @@ body {
 
 #darkMode-icon {
     font-size: 2.4rem;
-    color: var(--bg-color);
+    color: var(--text-color);
     cursor: pointer;
     display: block;
     z-index: 100;
@@ -508,6 +509,7 @@ body section {
 
 .home-content p {
     font-size: 1.6rem;
+    max-width: 300px;
 }
 
 .home-content .social-media a {
@@ -543,6 +545,7 @@ body section {
     font-weight: 600;
     border: .2rem solid transparent;
     transition: .5s ease;
+    margin-bottom: 2rem;
 }
 
 .btn:hover {
@@ -612,7 +615,7 @@ body section {
     transform: rotate(calc(360deg / 4 * var(--i)));
     transform-origin: 384px;
     background: var(--bg-color);
-    padding: 13px 0;
+    padding: 4px 0;
 }
 
 .home .profession-box .profession:nth-child(1) i {
@@ -765,7 +768,7 @@ span {
     border-top: .6rem solid var(--main-color);
     border-bottom: .6rem solid var(--main-color);
     transition: .5s ease;
-    height: 600px;
+    height: auto;
 }
 
 .services-container .services-box:hover {
@@ -1081,7 +1084,7 @@ span {
     }
 
     .home .profession-container .overlay {
-        right: -9rem;
+        right: -12rem;
     }
 
     .home-img {
@@ -1176,7 +1179,7 @@ span {
         position: absolute;
         right: 7rem;
         font-size: 2.6rem;
-        color: var(--bg-color);
+        color: var(--text-color);
         margin-bottom: .1rem;
     }
 
@@ -1185,7 +1188,7 @@ span {
         top: 100%;
         left: 0;
         width: 100%;
-        padding: 1rem 3%;
+        padding: 1rem 5%;
         background: var(--bg-color);
         border-top: .1rem solid rgba(0, 0, 0, .5);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .3);
