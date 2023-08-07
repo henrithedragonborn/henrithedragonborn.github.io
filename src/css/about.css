@@ -264,7 +264,12 @@ section p {
     align-items: center;
     margin-bottom: 20px;
 }
-
+.skill i{
+    font-size: 4em;
+    margin-right: 0.5rem;
+    font-weight: 500;
+    color: black;
+}
 .skill-name {
     width: 80px;
     font-size: 1.4em;
